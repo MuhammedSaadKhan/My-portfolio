@@ -1,0 +1,139 @@
+/* Reset styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a, #dark-mode-toggle {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+
+/* Hero Section */
+header {
+    background-color: #0073e6;
+    color: white;
+    padding: 60px;
+    margin-top: 60px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Sections */
+section {
+    padding: 50px;
+}
+
+/* About Me */
+#about {
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.skill {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: transform 0.3s;
+}
+.skill:hover {
+    transform: scale(1.1);
+}
+
+/* Projects Section */
+.project {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+form {
+    max-width: 400px;
+    margin: auto;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 18px;
+}
+button:hover {
+    background-color: #005bb5;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+.dark-mode nav {
+    background-color: #000;
+}
+.dark-mode .project, .dark-mode #about {
+    background-color: #333;
+}
+.dark-mode input, .dark-mode textarea {
+    background-color: #444;
+    color: white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

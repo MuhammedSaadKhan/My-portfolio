@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button id="dark-mode-toggle">🌙</button></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <p>“I am a Full Stack Developer in progress, continuously learning and improving my skills.”</p>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I am Muhammed Saad Khan.<br> I am a dedicated student in Artificial Intelligence and Machine Learning Engineering, with strong skills in Al, machine learning algorithms, and data analysis.<br> Proficient in Python and familiar with ML frameworks, I'm eager to apply my knowledge in real-world Al projects while continuously expanding my expertise in the field.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Python</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>AI-Powered Medical Diagnostic System</h3>
+            <p>Developed an AI-based diagnostic tool that integrates NLP, CNN and ML to analyze patient symptoms, medical images (MRI, CT) and lab results for disease detection. The system provides real-time diagnostic predictions through a web interface, assisting doctors in improving diagnostic accuracy, reducing errors and supporting<br> under-resourced healthcare settings. Built using Python, TensorFlow, Keras and Crescent with a strong focus on data privacy and security.</p>
+        </div>
+        <div class="project">
+            <h3>AI-Music Recommendation</h3>
+            <p>Developed a Music Recommendation System that utilizes collaborative filtering and content-based filtering techniques to suggest personalized music tracks to users. This project involved collecting and analyzing user data and music attributes to create tailored playlists based on user preferences and listening history.
+                <br>Leveraging machine learning algorithms, the system improved its recommendations over time, enhancing user engagement and satisfaction.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
